@@ -1,9 +1,9 @@
 
-class account (name: string) (id : int) (balance : float) =
+class account (name: string) (id : int) (balance : int) =
   object
     val mutable b = balance
 
-    method update (d : float) = b <- d
+    method update (d : int) = b <- d
 
     method get_name = name
 
